@@ -14,6 +14,12 @@ cv2.putText(image, "Shrek.", (50, 500), cv2.FONT_HERSHEY_SIMPLEX, 5, (255,255,25
 
 image = cv2.cvtColor(image, cv2.COLOR_BGR2HLS)
 
+height,width,depth = image.shape
+
+for h in range(height):
+    for w in range(width):
+        for d in range(depth):
+            image[h, w, d] = image[h, w, d] -122
 
 
 cv2.imshow("meme_window", image)
