@@ -43,7 +43,7 @@ while cv2.waitKey(1) < 0:
     
     frame = cv2.resize(frame, (50, 50))
 
-    height,width,depth = frame.shape
+    height, width, depth = frame.shape
 
     for h in range(height):
         for w in range(width):
@@ -66,3 +66,4 @@ if question.lower() == "yes":
     cv2.imwrite(name, frame)
 
 cv2.waitKey(0)
+#Oh mah gawd no way it's this hard to use AI for opencv HAHUHHAHAa;ldjfa;ldkjfa;ldfskj
